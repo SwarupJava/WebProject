@@ -1,0 +1,568 @@
+2021-03-06 21:22:04,907 [Thread-6] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-06 21:22:04,917 [Thread-6] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-06 21:22:04,917 [Thread-6] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl  - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-06 21:22:05,183 [Thread-6] WARN  o.s.b.f.support.DisposableBeanAdapter              - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-03-06 21:22:05,185 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown initiated...
+2021-03-06 21:22:05,187 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown completed.
+2021-03-06 21:22:05,426 [restartedMain] INFO  com.ashokit.Application                            - Starting Application using Java 1.8.0_261 on LAPTOP-RI3DGBJN with PID 15396 (D:\stsworkspace\08-PhoneBook-App\target\classes started by 91990 in D:\stsworkspace\08-PhoneBook-App)
+2021-03-06 21:22:05,426 [restartedMain] INFO  com.ashokit.Application                            - No active profile set, falling back to default profiles: default
+2021-03-06 21:22:05,850 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-06 21:22:05,881 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interfaces.
+2021-03-06 21:22:06,130 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2021-03-06 21:22:06,131 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2021-03-06 21:22:06,131 [restartedMain] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2021-03-06 21:22:06,132 [restartedMain] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-06 21:22:06,150 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2021-03-06 21:22:06,150 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 719 ms
+2021-03-06 21:22:06,193 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-2 - Starting...
+2021-03-06 21:22:06,195 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-2 - Start completed.
+2021-03-06 21:22:06,195 [restartedMain] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration              - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-06 21:22:06,254 [restartedMain] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-06 21:22:06,260 [restartedMain] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-06 21:22:06,291 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-06 21:22:06,291 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-06 21:22:06,305 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729
+2021-03-06 21:22:06,323 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-06 21:22:06,373 [restartedMain] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-06 21:22:06,617 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver                - Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-06 21:22:06,645 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2021-03-06 21:22:06,652 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2021-03-06 21:22:06,664 [restartedMain] INFO  com.ashokit.Application                            - Started Application in 1.294 seconds (JVM running for 76.129)
+2021-03-06 21:22:06,672 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener  - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   PropertyPlaceholderAutoConfiguration#propertySourcesPlaceholderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.context.support.PropertySourcesPlaceholderConfigurer; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2021-03-06 21:22:08,238 [Thread-10] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-06 21:22:08,240 [Thread-10] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-06 21:22:08,244 [Thread-10] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl  - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-06 21:22:08,470 [Thread-10] WARN  o.s.b.f.support.DisposableBeanAdapter              - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-03-06 21:22:08,471 [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-2 - Shutdown initiated...
+2021-03-06 21:22:08,475 [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-2 - Shutdown completed.
+2021-03-06 21:22:08,786 [restartedMain] INFO  com.ashokit.Application                            - Starting Application using Java 1.8.0_261 on LAPTOP-RI3DGBJN with PID 15396 (D:\stsworkspace\08-PhoneBook-App\target\classes started by 91990 in D:\stsworkspace\08-PhoneBook-App)
+2021-03-06 21:22:08,786 [restartedMain] INFO  com.ashokit.Application                            - No active profile set, falling back to default profiles: default
+2021-03-06 21:22:09,447 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ashokit.ApplicationTests], using SpringBootContextLoader
+2021-03-06 21:22:09,473 [main] INFO  o.s.t.c.support.AbstractContextLoader              - Could not detect default resource locations for test class [com.ashokit.ApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-03-06 21:22:09,476 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils       - Could not detect default configuration classes for test class [com.ashokit.ApplicationTests]: ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-03-06 21:22:09,676 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-06 21:22:09,695 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interfaces.
+2021-03-06 21:22:09,893 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        - Found @SpringBootConfiguration com.ashokit.Application for test class com.ashokit.ApplicationTests
+2021-03-06 21:22:09,935 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2021-03-06 21:22:09,937 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2021-03-06 21:22:09,938 [restartedMain] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2021-03-06 21:22:09,938 [restartedMain] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-06 21:22:09,965 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2021-03-06 21:22:09,966 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 1175 ms
+2021-03-06 21:22:10,015 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-3 - Starting...
+2021-03-06 21:22:10,017 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-3 - Start completed.
+2021-03-06 21:22:10,018 [restartedMain] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration              - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-06 21:22:10,087 [restartedMain] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-06 21:22:10,092 [restartedMain] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-06 21:22:10,132 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-06 21:22:10,133 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-06 21:22:10,152 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729
+2021-03-06 21:22:10,257 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-03-06 21:22:10,319 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-06 21:22:10,338 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1af82ba8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@703cb756, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@5897aae1, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@11dbcb3b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4aa517c3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5f369fc6, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3a13f663, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@75de7009, org.springframework.test.context.event.EventPublishingTestExecutionListener@17a77a7e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7c840fe3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@59014efe, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5f5923ef, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7381d6f0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2f262474, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7c03f9d0]
+2021-03-06 21:22:10,467 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver                - Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-06 21:22:10,541 [restartedMain] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-06 21:22:10,629 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2021-03-06 21:22:10,636 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2021-03-06 21:22:10,645 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2021-03-06 21:22:10,646 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2021-03-06 21:22:10,648 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2021-03-06 21:22:10,671 [restartedMain] INFO  com.ashokit.Application                            - Started Application in 1.946 seconds (JVM running for 80.136)
+2021-03-06 21:22:10,675 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener  - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   PropertyPlaceholderAutoConfiguration#propertySourcesPlaceholderConfigurer:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.context.support.PropertySourcesPlaceholderConfigurer; SearchStrategy: current) found beans of type 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer' swaggerProperties (OnBeanCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2021-03-06 21:22:11,060 [main] INFO  com.ashokit.ApplicationTests                       - Starting ApplicationTests using Java 1.8.0_261 on LAPTOP-RI3DGBJN with PID 10768 (started by 91990 in D:\stsworkspace\08-PhoneBook-App)
+2021-03-06 21:22:11,065 [main] INFO  com.ashokit.ApplicationTests                       - No active profile set, falling back to default profiles: default
+2021-03-06 21:22:13,204 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-06 21:22:13,297 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 77 ms. Found 1 JPA repository interfaces.
+2021-03-06 21:22:14,261 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2021-03-06 21:22:14,605 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2021-03-06 21:22:14,739 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-06 21:22:14,853 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-06 21:22:15,234 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-06 21:22:15,607 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-06 21:22:16,744 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-06 21:22:16,761 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-06 21:22:17,783 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-06 21:22:18,548 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver                - Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-06 21:22:19,254 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-06 21:22:19,878 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2021-03-06 21:22:19,921 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2021-03-06 21:22:19,938 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2021-03-06 21:22:20,256 [main] INFO  com.ashokit.ApplicationTests                       - Started ApplicationTests in 9.765 seconds (JVM running for 13.125)
+2021-03-06 21:22:20,578 [main] INFO  o.s.b.t.a.w.s.WebMvcTestContextBootstrapper        - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ashokit.controller.ContactRestControllerTest], using SpringBootContextLoader
+2021-03-06 21:22:20,579 [main] INFO  o.s.t.c.support.AbstractContextLoader              - Could not detect default resource locations for test class [com.ashokit.controller.ContactRestControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-03-06 21:22:20,579 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils       - Could not detect default configuration classes for test class [com.ashokit.controller.ContactRestControllerTest]: ContactRestControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-03-06 21:22:20,625 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        - Found @SpringBootConfiguration com.ashokit.Application for test class com.ashokit.controller.ContactRestControllerTest
+2021-03-06 21:22:20,626 [main] INFO  o.s.b.t.a.w.s.WebMvcTestContextBootstrapper        - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-03-06 21:22:20,628 [main] INFO  o.s.b.t.a.w.s.WebMvcTestContextBootstrapper        - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2e546f56, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6eae8830, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7c8d3591, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5e83bdc0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@53a05799, org.springframework.test.context.support.DirtiesContextTestExecutionListener@49d5aad5, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5c613fc3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1fcff432, org.springframework.test.context.event.EventPublishingTestExecutionListener@4e0274cd, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2a65ecda, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7f2f5172, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1f2144c1, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4258eff4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@475ed859, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@427fb501]
+2021-03-06 21:22:20,711 [main] INFO  c.a.controller.ContactRestControllerTest           - Starting ContactRestControllerTest using Java 1.8.0_261 on LAPTOP-RI3DGBJN with PID 10768 (started by 91990 in D:\stsworkspace\08-PhoneBook-App)
+2021-03-06 21:22:20,714 [main] INFO  c.a.controller.ContactRestControllerTest           - No active profile set, falling back to default profiles: default
+2021-03-06 21:22:21,325 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-06 21:22:21,512 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext           - Initializing Spring TestDispatcherServlet ''
+2021-03-06 21:22:21,513 [main] INFO  o.s.t.web.servlet.TestDispatcherServlet            - Initializing Servlet ''
+2021-03-06 21:22:21,514 [main] INFO  o.s.t.web.servlet.TestDispatcherServlet            - Completed initialization in 1 ms
+2021-03-06 21:22:21,535 [main] INFO  c.a.controller.ContactRestControllerTest           - Started ContactRestControllerTest in 0.899 seconds (JVM running for 14.403)
+2021-03-06 21:22:21,646 [main] INFO  c.a.controller.ContactRestController               - *** deleteContactById() - Record deleted ***
+2021-03-06 21:22:21,720 [main] ERROR c.a.controller.ContactRestController               - Exception occured :null
+2021-03-06 21:22:21,737 [main] INFO  c.a.controller.ContactRestController               - *** getContactById() - No Contact Found ***
+2021-03-06 21:22:21,807 [main] INFO  c.a.controller.ContactRestController               - *** getContactById() - No Contact Found ***
+2021-03-06 21:22:21,809 [main] ERROR c.a.controller.ContactRestController               - Exception occured :No Contact Found
+2021-03-06 21:22:21,915 [main] INFO  c.a.controller.ContactRestController               - *** saveContact() - Contact saved ***
+2021-03-06 21:22:21,939 [main] INFO  c.a.controller.ContactRestController               - *** saveContact() Contact not saved ***
+2021-03-06 21:22:21,951 [main] ERROR c.a.controller.ContactRestController               - **Exception occured:**null
+2021-03-06 21:22:21,951 [main] INFO  c.a.controller.ContactRestController               - *** saveContact() Contact not saved ***
+2021-03-06 21:22:21,964 [main] INFO  c.a.controller.ContactRestController               - *** getAllContacts() - Record is not available ***
+2021-03-06 21:22:21,977 [main] ERROR c.a.controller.ContactRestController               - ** Exception occured **null
+2021-03-06 21:22:22,014 [SpringContextShutdownHook] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-06 21:22:22,027 [SpringContextShutdownHook] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-06 21:22:22,251 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-06 21:22:22,253 [SpringContextShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl  - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-06 21:22:22,266 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown initiated...
+2021-03-06 21:22:22,270 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown completed.
+2021-03-06 21:24:27,587 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2021-03-06 21:24:27,696 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-06 21:24:27,697 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-06 21:24:27,697 [RMI TCP Connection(2)-127.0.0.1] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl  - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-06 21:24:27,707 [HikariPool-3 connection adder] ERROR com.zaxxer.hikari.pool.HikariPool                  - HikariPool-3 - Error thrown while acquiring connection from data source
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Session.checkSuspended(Session.java:1369)
+	at org.h2.engine.Session.transitionToState(Session.java:1361)
+	at org.h2.engine.Session.setCurrentCommand(Session.java:1343)
+	at org.h2.engine.Session.startStatementWithinTransaction(Session.java:1853)
+	at org.h2.command.Command.executeQuery(Command.java:190)
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:631)
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:363)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:725)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:711)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-03-06 21:24:27,910 [RMI TCP Connection(2)-127.0.0.1] WARN  o.s.b.f.support.DisposableBeanAdapter              - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-03-06 21:24:27,910 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-3 - Shutdown initiated...
+2021-03-06 21:24:27,972 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-3 - Shutdown completed.
+2021-03-06 21:28:42,003 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ashokit.ApplicationTests], using SpringBootContextLoader
+2021-03-06 21:28:42,032 [main] INFO  o.s.t.c.support.AbstractContextLoader              - Could not detect default resource locations for test class [com.ashokit.ApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-03-06 21:28:42,035 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils       - Could not detect default configuration classes for test class [com.ashokit.ApplicationTests]: ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-03-06 21:28:42,386 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        - Found @SpringBootConfiguration com.ashokit.Application for test class com.ashokit.ApplicationTests
+2021-03-06 21:28:42,717 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-03-06 21:28:42,774 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@703cb756, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5897aae1, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@11dbcb3b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4aa517c3, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5f369fc6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3a13f663, org.springframework.test.context.transaction.TransactionalTestExecutionListener@75de7009, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@17a77a7e, org.springframework.test.context.event.EventPublishingTestExecutionListener@7c840fe3, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@59014efe, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5f5923ef, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7381d6f0, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2f262474, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7c03f9d0, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6ad3fbe4]
+2021-03-06 21:28:43,667 [main] INFO  com.ashokit.ApplicationTests                       - Starting ApplicationTests using Java 1.8.0_261 on LAPTOP-RI3DGBJN with PID 17944 (started by 91990 in D:\stsworkspace\08-PhoneBook-App)
+2021-03-06 21:28:43,674 [main] INFO  com.ashokit.ApplicationTests                       - No active profile set, falling back to default profiles: default
+2021-03-06 21:28:46,128 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-06 21:28:46,317 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 155 ms. Found 1 JPA repository interfaces.
+2021-03-06 21:28:48,235 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2021-03-06 21:28:49,051 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2021-03-06 21:28:49,369 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-06 21:28:49,629 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-06 21:28:50,355 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-06 21:28:51,160 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-06 21:28:53,558 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-06 21:28:53,589 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-06 21:28:55,792 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-06 21:28:57,200 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver                - Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-06 21:28:58,537 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-06 21:28:59,721 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2021-03-06 21:28:59,805 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2021-03-06 21:28:59,838 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2021-03-06 21:29:00,375 [main] INFO  com.ashokit.ApplicationTests                       - Started ApplicationTests in 17.467 seconds (JVM running for 21.209)
+2021-03-06 21:29:00,873 [main] INFO  o.s.b.t.a.w.s.WebMvcTestContextBootstrapper        - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ashokit.controller.ContactRestControllerTest], using SpringBootContextLoader
+2021-03-06 21:29:00,875 [main] INFO  o.s.t.c.support.AbstractContextLoader              - Could not detect default resource locations for test class [com.ashokit.controller.ContactRestControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-03-06 21:29:00,876 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils       - Could not detect default configuration classes for test class [com.ashokit.controller.ContactRestControllerTest]: ContactRestControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-03-06 21:29:01,010 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        - Found @SpringBootConfiguration com.ashokit.Application for test class com.ashokit.controller.ContactRestControllerTest
+2021-03-06 21:29:01,018 [main] INFO  o.s.b.t.a.w.s.WebMvcTestContextBootstrapper        - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-03-06 21:29:01,022 [main] INFO  o.s.b.t.a.w.s.WebMvcTestContextBootstrapper        - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2e546f56, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6eae8830, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7c8d3591, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5e83bdc0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@53a05799, org.springframework.test.context.support.DirtiesContextTestExecutionListener@49d5aad5, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5c613fc3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1fcff432, org.springframework.test.context.event.EventPublishingTestExecutionListener@4e0274cd, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2a65ecda, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7f2f5172, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1f2144c1, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4258eff4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@475ed859, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@427fb501]
+2021-03-06 21:29:01,132 [main] INFO  c.a.controller.ContactRestControllerTest           - Starting ContactRestControllerTest using Java 1.8.0_261 on LAPTOP-RI3DGBJN with PID 17944 (started by 91990 in D:\stsworkspace\08-PhoneBook-App)
+2021-03-06 21:29:01,136 [main] INFO  c.a.controller.ContactRestControllerTest           - No active profile set, falling back to default profiles: default
+2021-03-06 21:29:02,161 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-06 21:29:02,572 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext           - Initializing Spring TestDispatcherServlet ''
+2021-03-06 21:29:02,573 [main] INFO  o.s.t.web.servlet.TestDispatcherServlet            - Initializing Servlet ''
+2021-03-06 21:29:02,580 [main] INFO  o.s.t.web.servlet.TestDispatcherServlet            - Completed initialization in 3 ms
+2021-03-06 21:29:02,620 [main] INFO  c.a.controller.ContactRestControllerTest           - Started ContactRestControllerTest in 1.583 seconds (JVM running for 23.454)
+2021-03-06 21:29:02,836 [main] INFO  c.a.controller.ContactRestController               - *** deleteContactById() - Record deleted ***
+2021-03-06 21:29:03,016 [main] ERROR c.a.controller.ContactRestController               - Exception occured :null
+2021-03-06 21:29:03,051 [main] INFO  c.a.controller.ContactRestController               - *** getContactById() - No Contact Found ***
+2021-03-06 21:29:03,227 [main] INFO  c.a.controller.ContactRestController               - *** getContactById() - No Contact Found ***
+2021-03-06 21:29:03,229 [main] ERROR c.a.controller.ContactRestController               - Exception occured :No Contact Found
+2021-03-06 21:29:03,466 [main] INFO  c.a.controller.ContactRestController               - *** saveContact() - Contact saved ***
+2021-03-06 21:29:03,497 [main] INFO  c.a.controller.ContactRestController               - *** saveContact() Contact not saved ***
+2021-03-06 21:29:03,536 [main] ERROR c.a.controller.ContactRestController               - **Exception occured:**null
+2021-03-06 21:29:03,539 [main] INFO  c.a.controller.ContactRestController               - *** saveContact() Contact not saved ***
+2021-03-06 21:29:03,574 [main] INFO  c.a.controller.ContactRestController               - *** getAllContacts() - Record is not available ***
+2021-03-06 21:29:03,598 [main] ERROR c.a.controller.ContactRestController               - ** Exception occured **null
+2021-03-06 21:29:03,662 [SpringContextShutdownHook] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-06 21:29:03,666 [SpringContextShutdownHook] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-06 21:29:04,153 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-06 21:29:04,154 [SpringContextShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl  - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-06 21:29:04,178 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown initiated...
+2021-03-06 21:29:04,183 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown completed.
+2021-03-06 21:30:32,747 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ashokit.ApplicationTests], using SpringBootContextLoader
+2021-03-06 21:30:32,759 [main] INFO  o.s.t.c.support.AbstractContextLoader              - Could not detect default resource locations for test class [com.ashokit.ApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-03-06 21:30:32,761 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils       - Could not detect default configuration classes for test class [com.ashokit.ApplicationTests]: ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-03-06 21:30:33,050 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        - Found @SpringBootConfiguration com.ashokit.Application for test class com.ashokit.ApplicationTests
+2021-03-06 21:30:33,293 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-03-06 21:30:33,345 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1af82ba8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@703cb756, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@5897aae1, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@11dbcb3b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4aa517c3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5f369fc6, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3a13f663, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@75de7009, org.springframework.test.context.event.EventPublishingTestExecutionListener@17a77a7e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7c840fe3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@59014efe, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5f5923ef, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7381d6f0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2f262474, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7c03f9d0]
+2021-03-06 21:30:34,094 [main] INFO  com.ashokit.ApplicationTests                       - Starting ApplicationTests using Java 1.8.0_261 on LAPTOP-RI3DGBJN with PID 9200 (started by 91990 in D:\stsworkspace\08-PhoneBook-App)
+2021-03-06 21:30:34,098 [main] INFO  com.ashokit.ApplicationTests                       - No active profile set, falling back to default profiles: default
+2021-03-06 21:30:36,113 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-06 21:30:36,217 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 89 ms. Found 1 JPA repository interfaces.
+2021-03-06 21:30:37,264 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2021-03-06 21:30:37,661 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2021-03-06 21:30:37,781 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-06 21:30:37,875 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-06 21:30:38,175 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-06 21:30:38,634 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-06 21:30:39,799 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-06 21:30:39,810 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-06 21:30:40,887 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-06 21:30:41,577 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver                - Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-06 21:30:42,376 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-06 21:30:42,985 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2021-03-06 21:30:43,034 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2021-03-06 21:30:43,054 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2021-03-06 21:30:43,335 [main] INFO  com.ashokit.ApplicationTests                       - Started ApplicationTests in 9.892 seconds (JVM running for 12.586)
+2021-03-06 21:30:43,592 [main] INFO  o.s.b.t.a.w.s.WebMvcTestContextBootstrapper        - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ashokit.controller.ContactRestControllerTest], using SpringBootContextLoader
+2021-03-06 21:30:43,595 [main] INFO  o.s.t.c.support.AbstractContextLoader              - Could not detect default resource locations for test class [com.ashokit.controller.ContactRestControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-03-06 21:30:43,596 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils       - Could not detect default configuration classes for test class [com.ashokit.controller.ContactRestControllerTest]: ContactRestControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-03-06 21:30:43,657 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        - Found @SpringBootConfiguration com.ashokit.Application for test class com.ashokit.controller.ContactRestControllerTest
+2021-03-06 21:30:43,658 [main] INFO  o.s.b.t.a.w.s.WebMvcTestContextBootstrapper        - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-03-06 21:30:43,659 [main] INFO  o.s.b.t.a.w.s.WebMvcTestContextBootstrapper        - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4c1c6a70, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2088e4d, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7aa6d0a7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@240c1f28, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@b6cae33, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4d5023f5, org.springframework.test.context.transaction.TransactionalTestExecutionListener@13ff110, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@450e4b40, org.springframework.test.context.event.EventPublishingTestExecutionListener@2bfd68e4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@67feb9e5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1937637b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2e546f56, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6eae8830, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7c8d3591, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5e83bdc0]
+2021-03-06 21:30:43,718 [main] INFO  c.a.controller.ContactRestControllerTest           - Starting ContactRestControllerTest using Java 1.8.0_261 on LAPTOP-RI3DGBJN with PID 9200 (started by 91990 in D:\stsworkspace\08-PhoneBook-App)
+2021-03-06 21:30:43,719 [main] INFO  c.a.controller.ContactRestControllerTest           - No active profile set, falling back to default profiles: default
+2021-03-06 21:30:44,255 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-06 21:30:44,428 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext           - Initializing Spring TestDispatcherServlet ''
+2021-03-06 21:30:44,428 [main] INFO  o.s.t.web.servlet.TestDispatcherServlet            - Initializing Servlet ''
+2021-03-06 21:30:44,429 [main] INFO  o.s.t.web.servlet.TestDispatcherServlet            - Completed initialization in 1 ms
+2021-03-06 21:30:44,453 [main] INFO  c.a.controller.ContactRestControllerTest           - Started ContactRestControllerTest in 0.788 seconds (JVM running for 13.705)
+2021-03-06 21:30:44,600 [main] INFO  c.a.controller.ContactRestController               - *** deleteContactById() - Record deleted ***
+2021-03-06 21:30:44,670 [main] ERROR c.a.controller.ContactRestController               - Exception occured :null
+2021-03-06 21:30:44,681 [main] INFO  c.a.controller.ContactRestController               - *** getContactById() - No Contact Found ***
+2021-03-06 21:30:44,738 [main] INFO  c.a.controller.ContactRestController               - *** getContactById() - No Contact Found ***
+2021-03-06 21:30:44,739 [main] ERROR c.a.controller.ContactRestController               - Exception occured :No Contact Found
+2021-03-06 21:30:44,838 [main] INFO  c.a.controller.ContactRestController               - *** saveContact() - Contact saved ***
+2021-03-06 21:30:44,851 [main] INFO  c.a.controller.ContactRestController               - *** saveContact() Contact not saved ***
+2021-03-06 21:30:44,864 [main] ERROR c.a.controller.ContactRestController               - **Exception occured:**null
+2021-03-06 21:30:44,864 [main] INFO  c.a.controller.ContactRestController               - *** saveContact() Contact not saved ***
+2021-03-06 21:30:44,874 [main] INFO  c.a.controller.ContactRestController               - *** getAllContacts() - Record is not available ***
+2021-03-06 21:30:44,899 [main] ERROR c.a.controller.ContactRestController               - ** Exception occured **null
+2021-03-06 21:30:44,942 [SpringContextShutdownHook] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-06 21:30:44,951 [SpringContextShutdownHook] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-06 21:30:45,194 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-06 21:30:45,195 [SpringContextShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl  - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-06 21:30:45,211 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown initiated...
+2021-03-06 21:30:45,220 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown completed.
+2021-03-06 21:32:03,036 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ashokit.ApplicationTests], using SpringBootContextLoader
+2021-03-06 21:32:03,051 [main] INFO  o.s.t.c.support.AbstractContextLoader              - Could not detect default resource locations for test class [com.ashokit.ApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-03-06 21:32:03,054 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils       - Could not detect default configuration classes for test class [com.ashokit.ApplicationTests]: ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-03-06 21:32:03,344 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        - Found @SpringBootConfiguration com.ashokit.Application for test class com.ashokit.ApplicationTests
+2021-03-06 21:32:03,603 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-03-06 21:32:03,653 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1af82ba8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@703cb756, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@5897aae1, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@11dbcb3b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4aa517c3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5f369fc6, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3a13f663, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@75de7009, org.springframework.test.context.event.EventPublishingTestExecutionListener@17a77a7e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7c840fe3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@59014efe, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5f5923ef, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7381d6f0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2f262474, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7c03f9d0]
+2021-03-06 21:32:04,364 [main] INFO  com.ashokit.ApplicationTests                       - Starting ApplicationTests using Java 1.8.0_261 on LAPTOP-RI3DGBJN with PID 16896 (started by 91990 in D:\stsworkspace\08-PhoneBook-App)
+2021-03-06 21:32:04,368 [main] INFO  com.ashokit.ApplicationTests                       - No active profile set, falling back to default profiles: default
+2021-03-06 21:32:06,425 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-06 21:32:06,539 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 98 ms. Found 1 JPA repository interfaces.
+2021-03-06 21:32:07,547 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2021-03-06 21:32:07,903 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2021-03-06 21:32:08,015 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-06 21:32:08,163 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-06 21:32:08,515 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-06 21:32:08,850 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-06 21:32:10,047 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-06 21:32:10,063 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-06 21:32:11,145 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-06 21:32:11,847 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver                - Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-06 21:32:12,522 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-06 21:32:13,195 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2021-03-06 21:32:13,256 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2021-03-06 21:32:13,285 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2021-03-06 21:32:13,593 [main] INFO  com.ashokit.ApplicationTests                       - Started ApplicationTests in 9.844 seconds (JVM running for 12.56)
+2021-03-06 21:32:13,865 [main] INFO  o.s.b.t.a.w.s.WebMvcTestContextBootstrapper        - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ashokit.controller.ContactRestControllerTest], using SpringBootContextLoader
+2021-03-06 21:32:13,866 [main] INFO  o.s.t.c.support.AbstractContextLoader              - Could not detect default resource locations for test class [com.ashokit.controller.ContactRestControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-03-06 21:32:13,867 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils       - Could not detect default configuration classes for test class [com.ashokit.controller.ContactRestControllerTest]: ContactRestControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-03-06 21:32:13,898 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        - Found @SpringBootConfiguration com.ashokit.Application for test class com.ashokit.controller.ContactRestControllerTest
+2021-03-06 21:32:13,900 [main] INFO  o.s.b.t.a.w.s.WebMvcTestContextBootstrapper        - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-03-06 21:32:13,902 [main] INFO  o.s.b.t.a.w.s.WebMvcTestContextBootstrapper        - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3616d186, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@45e9270f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@61c76d6, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6a0310b1, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6a196696, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6644f585, org.springframework.test.context.transaction.TransactionalTestExecutionListener@30b955d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@71ff9b15, org.springframework.test.context.event.EventPublishingTestExecutionListener@50f37e6a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@115a512c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4e249f27, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@430e82c5, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@845a4e0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4bd547f5, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@2162340f]
+2021-03-06 21:32:13,959 [main] INFO  c.a.controller.ContactRestControllerTest           - Starting ContactRestControllerTest using Java 1.8.0_261 on LAPTOP-RI3DGBJN with PID 16896 (started by 91990 in D:\stsworkspace\08-PhoneBook-App)
+2021-03-06 21:32:13,961 [main] INFO  c.a.controller.ContactRestControllerTest           - No active profile set, falling back to default profiles: default
+2021-03-06 21:32:14,541 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-06 21:32:14,733 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext           - Initializing Spring TestDispatcherServlet ''
+2021-03-06 21:32:14,733 [main] INFO  o.s.t.web.servlet.TestDispatcherServlet            - Initializing Servlet ''
+2021-03-06 21:32:14,734 [main] INFO  o.s.t.web.servlet.TestDispatcherServlet            - Completed initialization in 0 ms
+2021-03-06 21:32:14,750 [main] INFO  c.a.controller.ContactRestControllerTest           - Started ContactRestControllerTest in 0.842 seconds (JVM running for 13.717)
+2021-03-06 21:32:14,854 [main] INFO  c.a.controller.ContactRestController               - *** deleteContactById() - Record deleted ***
+2021-03-06 21:32:14,920 [main] ERROR c.a.controller.ContactRestController               - Exception occured :null
+2021-03-06 21:32:14,930 [main] INFO  c.a.controller.ContactRestController               - *** getContactById() - No Contact Found ***
+2021-03-06 21:32:14,984 [main] INFO  c.a.controller.ContactRestController               - *** getContactById() - No Contact Found ***
+2021-03-06 21:32:14,985 [main] ERROR c.a.controller.ContactRestController               - Exception occured :No Contact Found
+2021-03-06 21:32:15,092 [main] INFO  c.a.controller.ContactRestController               - *** saveContact() - Contact saved ***
+2021-03-06 21:32:15,106 [main] INFO  c.a.controller.ContactRestController               - *** saveContact() Contact not saved ***
+2021-03-06 21:32:15,119 [main] ERROR c.a.controller.ContactRestController               - **Exception occured:**null
+2021-03-06 21:32:15,119 [main] INFO  c.a.controller.ContactRestController               - *** saveContact() Contact not saved ***
+2021-03-06 21:32:15,130 [main] INFO  c.a.controller.ContactRestController               - *** getAllContacts() - Record is not available ***
+2021-03-06 21:32:15,144 [main] ERROR c.a.controller.ContactRestController               - ** Exception occured **null
+2021-03-06 21:32:15,206 [SpringContextShutdownHook] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-06 21:32:15,210 [SpringContextShutdownHook] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-06 21:32:15,439 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-06 21:32:15,440 [SpringContextShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl  - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-06 21:32:15,475 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown initiated...
+2021-03-06 21:32:15,480 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown completed.
+2021-03-13 01:20:09,061 [restartedMain] INFO  com.ashokit.Application                            - Starting Application using Java 1.8.0_261 on LAPTOP-RI3DGBJN with PID 11816 (D:\stsworkspace\08-PhoneBook-App\target\classes started by 91990 in D:\stsworkspace\08-PhoneBook-App)
+2021-03-13 01:20:09,166 [restartedMain] INFO  com.ashokit.Application                            - No active profile set, falling back to default profiles: default
+2021-03-13 01:20:09,221 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-13 01:20:09,221 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-13 01:20:11,862 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-13 01:20:12,009 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 106 ms. Found 1 JPA repository interfaces.
+2021-03-13 01:20:14,089 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2021-03-13 01:20:14,098 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2021-03-13 01:20:14,098 [restartedMain] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2021-03-13 01:20:14,099 [restartedMain] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-13 01:20:14,198 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2021-03-13 01:20:14,198 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 4976 ms
+2021-03-13 01:20:14,374 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2021-03-13 01:20:14,555 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2021-03-13 01:20:14,631 [restartedMain] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration              - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-13 01:20:15,085 [restartedMain] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-13 01:20:15,198 [restartedMain] INFO  org.hibernate.Version                              - HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-13 01:20:15,507 [restartedMain] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-13 01:20:15,640 [restartedMain] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-13 01:20:16,179 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-13 01:20:16,204 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-13 01:20:16,259 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729
+2021-03-13 01:20:16,815 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-13 01:20:17,063 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver                - Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-13 01:20:17,207 [restartedMain] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-13 01:20:17,476 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2021-03-13 01:20:17,493 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2021-03-13 01:20:17,506 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2021-03-13 01:20:17,522 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2021-03-13 01:20:17,532 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2021-03-13 01:20:17,734 [restartedMain] INFO  com.ashokit.Application                            - Started Application in 9.322 seconds (JVM running for 11.469)
+2021-03-13 01:26:42,441 [RMI TCP Connection(1)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-13 01:26:42,441 [RMI TCP Connection(1)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2021-03-13 01:26:42,443 [RMI TCP Connection(1)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 2 ms
+2021-03-13 01:27:04,934 [Thread-6] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-13 01:27:04,937 [Thread-6] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-13 01:27:04,938 [Thread-6] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl  - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-13 01:27:05,167 [Thread-6] WARN  o.s.b.f.support.DisposableBeanAdapter              - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-03-13 01:27:05,169 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown initiated...
+2021-03-13 01:27:05,172 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown completed.
+2021-03-13 01:27:05,366 [restartedMain] INFO  com.ashokit.Application                            - Starting Application using Java 1.8.0_261 on LAPTOP-RI3DGBJN with PID 11816 (D:\stsworkspace\08-PhoneBook-App\target\classes started by 91990 in D:\stsworkspace\08-PhoneBook-App)
+2021-03-13 01:27:05,366 [restartedMain] INFO  com.ashokit.Application                            - No active profile set, falling back to default profiles: default
+2021-03-13 01:27:05,719 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-13 01:27:05,727 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+2021-03-13 01:27:05,869 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 8080 (http)
+2021-03-13 01:27:05,870 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-13 01:27:05,870 [restartedMain] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2021-03-13 01:27:05,871 [restartedMain] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-13 01:27:05,885 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2021-03-13 01:27:05,885 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 515 ms
+2021-03-13 01:27:05,914 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-2 - Starting...
+2021-03-13 01:27:05,916 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-2 - Start completed.
+2021-03-13 01:27:05,917 [restartedMain] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration              - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-13 01:27:05,948 [restartedMain] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-13 01:27:05,952 [restartedMain] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-13 01:27:05,975 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-13 01:27:05,976 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-13 01:27:05,984 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729
+2021-03-13 01:27:06,074 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-13 01:27:06,137 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver                - Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-13 01:27:06,173 [restartedMain] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-13 01:27:06,236 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-13 01:27:06,241 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2021-03-13 01:27:06,242 [restartedMain] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-13 01:27:06,243 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-13 01:27:06,243 [restartedMain] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl  - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-13 01:27:06,456 [restartedMain] WARN  o.s.b.f.support.DisposableBeanAdapter              - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-03-13 01:27:06,457 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-2 - Shutdown initiated...
+2021-03-13 01:27:06,461 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-2 - Shutdown completed.
+2021-03-13 01:27:06,464 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Pausing ProtocolHandler ["http-nio-8080"]
+2021-03-13 01:27:06,464 [restartedMain] INFO  org.apache.catalina.core.StandardService           - Stopping service [Tomcat]
+2021-03-13 01:27:06,466 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Stopping ProtocolHandler ["http-nio-8080"]
+2021-03-13 01:27:06,466 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Destroying ProtocolHandler ["http-nio-8080"]
+2021-03-13 01:27:06,475 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-03-13 01:27:06,489 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter             - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2021-03-13 01:27:31,753 [restartedMain] INFO  com.ashokit.Application                            - Starting Application using Java 1.8.0_261 on LAPTOP-RI3DGBJN with PID 17124 (D:\stsworkspace\08-PhoneBook-App\target\classes started by 91990 in D:\stsworkspace\08-PhoneBook-App)
+2021-03-13 01:27:31,756 [restartedMain] INFO  com.ashokit.Application                            - No active profile set, falling back to default profiles: default
+2021-03-13 01:27:31,798 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-13 01:27:31,799 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-13 01:27:32,691 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-13 01:27:32,734 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
+2021-03-13 01:27:33,164 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 8080 (http)
+2021-03-13 01:27:33,170 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-13 01:27:33,171 [restartedMain] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2021-03-13 01:27:33,171 [restartedMain] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-13 01:27:33,248 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2021-03-13 01:27:33,248 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 1448 ms
+2021-03-13 01:27:33,336 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2021-03-13 01:27:33,484 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2021-03-13 01:27:33,491 [restartedMain] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration              - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-13 01:27:33,624 [restartedMain] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-13 01:27:33,654 [restartedMain] INFO  org.hibernate.Version                              - HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-13 01:27:33,743 [restartedMain] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-13 01:27:33,810 [restartedMain] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-13 01:27:34,203 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-13 01:27:34,209 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-13 01:27:34,236 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729
+2021-03-13 01:27:34,572 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-13 01:27:34,728 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver                - Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-13 01:27:34,850 [restartedMain] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-13 01:27:35,030 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-13 01:27:35,040 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2021-03-13 01:27:35,041 [restartedMain] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-13 01:27:35,043 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-13 01:27:35,043 [restartedMain] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl  - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-13 01:27:35,269 [restartedMain] WARN  o.s.b.f.support.DisposableBeanAdapter              - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-03-13 01:27:35,271 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown initiated...
+2021-03-13 01:27:35,274 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown completed.
+2021-03-13 01:27:35,282 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Pausing ProtocolHandler ["http-nio-8080"]
+2021-03-13 01:27:35,283 [restartedMain] INFO  org.apache.catalina.core.StandardService           - Stopping service [Tomcat]
+2021-03-13 01:27:35,291 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Stopping ProtocolHandler ["http-nio-8080"]
+2021-03-13 01:27:35,292 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Destroying ProtocolHandler ["http-nio-8080"]
+2021-03-13 01:27:35,303 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-03-13 01:27:35,315 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter             - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2021-03-13 01:53:41,268 [restartedMain] INFO  com.ashokit.Application                            - Starting Application using Java 1.8.0_261 on LAPTOP-RI3DGBJN with PID 2044 (D:\stsworkspace\08-PhoneBook-App\target\classes started by 91990 in D:\stsworkspace\08-PhoneBook-App)
+2021-03-13 01:53:41,270 [restartedMain] INFO  com.ashokit.Application                            - No active profile set, falling back to default profiles: default
+2021-03-13 01:53:41,315 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-13 01:53:41,316 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-13 01:53:42,205 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-13 01:53:42,244 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interfaces.
+2021-03-13 01:53:42,664 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2021-03-13 01:53:42,670 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2021-03-13 01:53:42,671 [restartedMain] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2021-03-13 01:53:42,671 [restartedMain] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-13 01:53:42,745 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2021-03-13 01:53:42,745 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 1428 ms
+2021-03-13 01:53:42,836 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2021-03-13 01:53:42,910 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2021-03-13 01:53:42,981 [restartedMain] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration              - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-13 01:53:43,105 [restartedMain] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-13 01:53:43,134 [restartedMain] INFO  org.hibernate.Version                              - HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-13 01:53:43,216 [restartedMain] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-13 01:53:43,285 [restartedMain] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-13 01:53:43,645 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-13 01:53:43,651 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-13 01:53:43,680 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729
+2021-03-13 01:53:44,010 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-13 01:53:44,155 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver                - Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-13 01:53:44,274 [restartedMain] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-13 01:53:44,447 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2021-03-13 01:53:44,536 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2021-03-13 01:53:44,547 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2021-03-13 01:53:44,557 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2021-03-13 01:53:44,564 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2021-03-13 01:53:44,687 [restartedMain] INFO  com.ashokit.Application                            - Started Application in 3.722 seconds (JVM running for 4.451)
+2021-03-13 01:53:44,878 [RMI TCP Connection(1)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-13 01:53:44,878 [RMI TCP Connection(1)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2021-03-13 01:53:44,879 [RMI TCP Connection(1)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 1 ms
+2021-03-13 01:53:59,473 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2021-03-13 01:53:59,615 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-13 01:53:59,618 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-13 01:53:59,619 [RMI TCP Connection(3)-127.0.0.1] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl  - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-13 01:53:59,852 [RMI TCP Connection(3)-127.0.0.1] WARN  o.s.b.f.support.DisposableBeanAdapter              - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-03-13 01:53:59,853 [RMI TCP Connection(3)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown initiated...
+2021-03-13 01:53:59,856 [RMI TCP Connection(3)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown completed.

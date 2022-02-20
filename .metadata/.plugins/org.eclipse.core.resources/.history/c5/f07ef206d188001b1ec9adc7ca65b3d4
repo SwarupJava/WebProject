@@ -1,0 +1,44 @@
+package com.ashokit.usermgmt.service;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ashokit.usermgmt.model.CountryModel;
+import com.ashokit.usermgmt.model.StateModel;
+import com.ashokit.usermgmt.repositories.CountryRepository;
+import com.ashokit.usermgmt.repositories.StateRepository;
+
+@Service
+public class UserManagementServiceImpl implements UserManagementService {
+    
+	@Autowired
+	private CountryRepository countryRepository;
+	
+	@Autowired
+	private StateRepository stateRepository;
+	
+	@Override
+	public Map<Integer, String> getAllCountries() {
+		List<CountryModel> countriesList = countryRepository.findAll();
+		Map<Integer, String> countriesMap = new HashMap<Integer, String>();
+		countriesList.forEach(country->{
+			countriesMap.put(country.getCountryId(), country.getCountryName());
+		});
+		return countriesMap;
+	}
+
+	@Override
+	public Map<Integer, String> getStates(Integer countryId) {
+		List<StateModel> statelist = stateRepository.findByCountryById(countryId);
+		Map<Integer, String> statesMap = new HashMap<Integer, String>();
+		statelist.forEach(state->{
+			statesMap.put(state.getStateId(), state.getStateName());
+		});
+		return statesMap;
+	}
+
+}
